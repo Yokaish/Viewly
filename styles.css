@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Montserrat:ital,wght@1,600&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --azul-botao: #66c1bd;
+    --cor-fundo: #07030f;
+    --fonte-principal:'Gabarito', cursive;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav1 {
+    display: flex;
+    gap: 30px;
+}
+
+.contain__head {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+header {
+    background-color: transparent;
+    width: 100%; 
+    
+}
+
+.logodiv {
+    height: 55px;
+    width: 55px;
+}
+
+.logo {
+    width: 10%;
+    cursor: pointer;
+}
+
+ .sociais {
+    margin: 5px 70px;
+
+}
+
+.menu nav a {
+    color: var(--branco-principal);
+    text-decoration: none;
+    padding-left: 5%;
+    position: relative;
+
+}
+
+.menu nav a::after {
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-color: var(--azul-botao);
+    position: absolute;
+    top: 30px;
+    left: 14.5px;
+    transition: width 0.45s;
+
+}
+
+.menu nav a:hover::after {
+    width: 30px;
+}
+
+.sociais button {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    margin-bottom: 6%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sociais button  i {
+    font-size: 35px;
+
+}
+
+
+
+
+.principal {
+    background-image: url(assets/Netflix2\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 12em;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 45% 60%;
+   
+}
+
+.container__botao {
+    background-color: var(--azul-botao);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1.5em;
+    color: var(--branco-principal);
+    display: block;
+    font-family: var(--fonte-principal);
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+}
+
+.container__titulo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+    width: 500px;
+}
+
+.container__caixa {
+    margin: 0 6em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagem__secundaria {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 12em;
+}
+
+.container2__titulo {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container2__desc {
+    font-size: 30px;
+    margin-bottom: 0.1em;
+    padding: 2.5em;
+}
+
+.botao__secundario__baixo {
+    display: inline-block;
+    margin-top: 1em;
+
+}
+
+.imagem__secundaria__baixo {
+    width: 80%;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+}
+
+.lista__item {
+    font-size: 32px;
+}
+
+.footer {
+    text-align: center;
+    
+}
+
+.logofinal {
+    width: 150px;
+}
+
+.footer__lista {
+    display: flex;
+    justify-content: center;
+    margin: 5em 0;
+    list-style-type: none;
+    gap: 20px;
+    text-decoration: none; 
+}
+
+.footer__lista__link {
+    text-decoration: none;
+}
+
+.footer__text {
+    margin: 2em 0;
+}
+
+.linkfinal {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
