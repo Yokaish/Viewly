@@ -6,6 +6,7 @@
     --azul-botao: #66c1bd;
     --cor-fundo: #07030f;
     --fonte-principal:'Gabarito', cursive;
+    --botao-efeito:  #499b978c;
 }
 
 body {
@@ -129,6 +130,10 @@ header {
     margin-bottom: 1em;
 }
 
+.container__botao:hover {
+    background-color: var(--botao-efeito);
+}
+
 .botao_secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
@@ -235,4 +240,31 @@ header {
 .linkfinal {
     text-decoration: none;
     color: var(--branco-principal);
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        display: block;
+        justify-content: center;
+        flex-direction: column;       
+        background-image: none;
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .imagem__secundaria {
+        width: 50vw;
+    }
 }
