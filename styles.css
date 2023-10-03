@@ -262,9 +262,30 @@ header {
     .secundario {
         margin: 0;
         text-align: center;
+        
     }
 
     .imagem__secundaria {
         width: 50vw;
+    }
+
+    .container2__desc {
+        font-size: 16px;
+    }
+
+    .container2__titulo {
+        font-size: 36px;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .dispositivos__titulo {
+        font-size: 36px;
+    }
+
+    .footer__lista {
+        display: block;
     }
 }
