@@ -7,6 +7,7 @@
     --cor-fundo: #07030f;
     --fonte-principal:'Gabarito', cursive;
     --botao-efeito:  #499b978c;
+    --cor-footer: #aaaaaa;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .nav1 {
@@ -235,20 +237,26 @@ header {
 
 .footer__text {
     margin: 2em 0;
+    color: var(--cor-footer);
 }
 
 .linkfinal {
     text-decoration: none;
-    color: var(--branco-principal);
+    color: var(--cor-footer)
 }
 
 @media screen and (max-width: 768px) {
+    
+    .principal {
+        background-image: url(assets/Netflix\ 3.png); 
+        background-repeat: no-repeat;
+    }
     
     .container {
         display: block;
         justify-content: center;
         flex-direction: column;       
-        background-image: none;
+        background-position: 0em;
     }
 
     .container__imagem {
@@ -287,5 +295,14 @@ header {
 
     .footer__lista {
         display: block;
+        
+    }
+
+    .footer__lista__link {
+        margin: 1em;
+    }
+
+    .botao_secundario {
+        background-color: rgba(36, 36, 36, 0.452);
     }
 }
