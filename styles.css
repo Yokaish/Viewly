@@ -256,7 +256,7 @@ header {
         display: block;
         justify-content: center;
         flex-direction: column;       
-        background-position: 0em 26em;
+        background-position: 0em 25em;
     }
 
     .container__imagem {
