@@ -256,7 +256,7 @@ header {
         display: block;
         justify-content: center;
         flex-direction: column;       
-        background-position: 0em;
+        background-position: 0em 24em;
     }
 
     .container__imagem {
@@ -303,6 +303,7 @@ header {
     }
 
     .botao_secundario {
-        background-color: rgba(36, 36, 36, 0.452);
+        background-color: rgba(36, 36, 36, 0.884);
     }
+      
 }
