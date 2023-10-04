@@ -245,7 +245,7 @@ header {
     color: var(--cor-footer)
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     
     .principal {
         background-image: url(assets/Netflix\ 3.png); 
@@ -256,7 +256,7 @@ header {
         display: block;
         justify-content: center;
         flex-direction: column;       
-        background-position: 0em 24em;
+        background-position: 0em 25em;
     }
 
     .container__imagem {
@@ -305,5 +305,10 @@ header {
     .botao_secundario {
         background-color: rgba(36, 36, 36, 0.884);
     }
+
+    .secundario {
+        height: 580px;
+    }
       
 }
+
