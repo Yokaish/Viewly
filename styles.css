@@ -213,6 +213,13 @@ header {
     font-family: 'Montserrat', sans-serif;
 }
 
+.cont {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .container2__desc {
     font-size: 30px;
     margin-bottom: 0.1em;
@@ -347,6 +354,7 @@ header {
     .secundario {
         margin: 0;
         text-align: center;
+        margin-bottom: -350px;
         
     }
 
@@ -360,6 +368,10 @@ header {
 
     .container2__titulo {
         font-size: 36px;
+    }
+
+    #notebook {
+        margin-top: 120px;
     }
 
     .dispositivos__lista {
