@@ -100,6 +100,40 @@ header {
 
 }
 
+#btn__menu {
+    width: 45px;
+    height: 45px;
+    border: 4px solid var(--branco-principal);
+    background: transparent;
+    border-radius: 16px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+#btn__menu.ativar .linha__botao:nth-child(1) {
+    transform: translateY(6px) rotate(-45deg);
+}
+
+#btn__menu.ativar .linha__botao:nth-child(3) {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+#btn__menu.ativar .linha__botao:nth-child(2) {
+    width: 0;
+}
+
+.linha__botao {
+    width: 25px;
+    height: 5px;
+    background-color: var(--branco-principal);
+    display: block;
+    margin: 1px auto;
+    border-radius: 16px;
+    position: relative;
+    transform-origin: center;
+    transition: 0.2s;
+}
+
 
 
 
@@ -245,8 +279,43 @@ header {
     color: var(--cor-footer)
 }
 
-@media screen and (max-width: 1200px) {
+.menu__mobile {
+    background-color: #07030f96;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    top: 77px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 1.2em;
+    visibility: hidden;
+}
+
+.menu__mobile nav a {
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+}
+
+.menu__mobile nav a:hover {
+    background-color: rgba(29, 29, 29, 0.603);
+}
+
+@media screen and (max-width: 1030px) {
     
+    .menu, .sociais {
+        display: none;
+    }
+
+    .menu__mobile.abrir {
+        visibility: visible;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
     .principal {
         background-image: url(assets/Netflix\ 3.png); 
         background-repeat: no-repeat;

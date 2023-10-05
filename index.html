@@ -20,6 +20,21 @@
                         <a href="#">Categorias</a>
                     </nav>
                 </div>
+
+                <button onclick="animar()" id="btn__menu">
+                    <span class="linha__botao"></span>
+                    <span class="linha__botao"></span>
+                    <span class="linha__botao"></span>
+                </button>
+
+                <div class="menu__mobile" id="menu__mobile">
+                    <nav class="nav2">
+                        <a href="#">Home</a>
+                        <a href="#">Planos</a>
+                        <a href="#">Categorias</a>
+                    </nav>
+                </div>
+
                 <div class="sociais">
                     <button><i class="fa-brands fa-github" style="color: #ffffff;"></i></button>
                     <button><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></button>
@@ -27,6 +42,7 @@
             </div>    
         </header>
 
+            <script src="animar.js"></script>
 
         <section class="container principal">
         <div class="container__caixa">
@@ -112,6 +128,18 @@
             <p class="footer__text">Viewly+ é um projeto pessoal, baseado no app de streaming Netflix. O serviço Viewly+ não é comercializado. Rua Vergueiro, 3185 - Liberdade, São Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33</p>
 
         </footer>   
+
+        <script>
+            function animar() {
+                const btn = document.getElementById('btn__menu')
+                const menudiv = document.getElementById('menu__mobile')
+                btn.classList.toggle('ativar')
+                menudiv.classList.toggle('abrir')
+                 
+                menudiv.addEventListener('click', animar)
+
+            }
+        </script>
 
     </body>
 
